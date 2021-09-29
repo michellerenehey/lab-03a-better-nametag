@@ -12,16 +12,37 @@
     </head>
     <body>
         <section id="name-tag">
-            <header>
+            <header id="header-color">
                 <h1>Hello</h1>
                 <h2>my name is</h2>
             </header>
-            <main id="first-name">Michelle</main>
-            <footer></footer>
+            <main id="name-entered"></main>
+            <div id="pronoun-selected"></div>
+            <footer id="footer-color"></footer>
         <section id="controls">
-            <input id="name" type="text" name="name-tag-name">
-            <button id="generate">Enter First Name</button>
+            <input id="name-orange" type="text">
+            <button id="generate-orange">Enter Name for Orange Tag</button>
+            <input id="name-blue" type="text">
+            <button id="generate-blue">Enter Name for Blue Tag</button>
+            <input id="name-green" type="text">
+            <button id="generate-green">Enter Name for Green Tag</button>
         </section>
+        <section id="pronouns">
+            <button id="generate-she-her">Click to add she/her pronoun</button>
+            <button id="generate-he-him">Click to add he/him pronoun</button>
+            <button id="generate-they-them">Click to add they/them pronoun</button>
+            <button id="generate-she-they">Click to add she/they pronoun</button>
+            <button id="generate-he-they">Click to add he/they pronoun</button>
+        </section>
+        <section>
+            <label for="fonts">Choose a font:</label>
+            <select name="fonts" id="fonts">
+                <option value="handwriting">Handwriting</option>
+                <option value="all-caps">ALL CAPS</option>
+            </select>
+        </section>
+        <br>
+        <button id="reset">reset</button>
     </section>
     <script type="module" src="./app.js"></script>
 </body>
