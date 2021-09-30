@@ -3,7 +3,9 @@ body, html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 * {
@@ -43,7 +45,14 @@ main {
     font-family: 'Cedarville Cursive', cursive;    
     font-weight: bold;
     padding-top: 30px;
-    padding-bottom: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+#pronoun-placeholder{
+    width: 400px; 
+    font-family: 'Cedarville Cursive', cursive;    
+    font-weight: lighter;
     text-align: center;
     background-color: white;
 }
@@ -57,35 +66,31 @@ footer {
 }
 
 #controls {
-    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+#name , #pronoun {
+    height: 50px;
+    margin: 15px;
+    border-radius: 20px;
+    color: black;
+}
+
+#controls {
     text-align: center;
+}
+
+label {
+    padding: 10px;
+}
+#submit {
+    margin: 15px; 
     padding: 5px;
-}
-
-#name {
-    height: 50px;
-}
-
-#generate-orange {
     border-radius: 20px;
-    background-color: orange;
-    height: 50px
+    background-color: red; 
 }
 
-#generate-blue {
-    border-radius: 20px;
-    background-color: blue;
-    height: 50px
-}
 
-#generate-green {
-    border-radius: 20px;
-    background-color: green;
-    height: 50px
-}
 
-#reset {
-    margin: 10px; 
-    height: 50px;
-    width: 100px; 
-}

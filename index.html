@@ -11,38 +11,32 @@
     
     </head>
     <body>
+        <!-- top section of name-tag -->
         <section id="name-tag">
             <header id="header-color">
                 <h1>Hello</h1>
                 <h2>my name is</h2>
             </header>
-            <main id="name-entered"></main>
-            <div id="pronoun-selected"></div>
+        <!-- name section of name tag -->
+            <main id="name-placeholder"></main>
+            <div id="pronoun-placeholder"></div>
+            <!-- <div id="pronoun-selected"></div> -->
             <footer id="footer-color"></footer>
-        <section id="controls">
-            <input id="name-orange" type="text">
-            <button id="generate-orange">Enter Name for Orange Tag</button>
-            <input id="name-blue" type="text">
-            <button id="generate-blue">Enter Name for Blue Tag</button>
-            <input id="name-green" type="text">
-            <button id="generate-green">Enter Name for Green Tag</button>
+        <!-- user inputs & submit buttons -->
+         <section id="controls">
+            <input id="name" type="text" placeholder="Type your name here...">
+            <input id="pronoun" type="text" placeholder="Type your preferred pronoun here...">
+            <label id="color-label" for="tag-color">What color would you like your nametag to be?</label>
+                <input id="tag-color" type="color" name="tag-color">
+            <label id="font-label" for="font-changer">Do you want to change your font? UNDER CONSTRUCTION</label>
+                <select id="font-changer" name="font-changer">
+                    <option id="no-font-change" value="no">Nah, I'm good</option>
+                    <option id="all-caps-font-change" value="all-caps">All caps, baby!</option>
+                    <option id="green-font-change" value="green">Green font would be tight.</option>
+                </select>
+            <button id="submit">Click here to submit!</button>           
         </section>
-        <section id="pronouns">
-            <button id="generate-she-her">Click to add she/her pronoun</button>
-            <button id="generate-he-him">Click to add he/him pronoun</button>
-            <button id="generate-they-them">Click to add they/them pronoun</button>
-            <button id="generate-she-they">Click to add she/they pronoun</button>
-            <button id="generate-he-they">Click to add he/they pronoun</button>
         </section>
-        <section>
-            <label for="fonts">Choose a font:</label>
-            <select name="fonts" id="fonts">
-                <option value="handwriting">Handwriting</option>
-                <option value="all-caps">ALL CAPS</option>
-            </select>
-        </section>
-        <br>
-        <button id="reset">reset</button>
     </section>
     <script type="module" src="./app.js"></script>
 </body>
