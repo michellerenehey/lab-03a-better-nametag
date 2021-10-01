@@ -15,6 +15,7 @@ const colorChangeHead = document.getElementById('header-color');
 const colorChangeFoot = document.getElementById('footer-color');
 
 // grab fonts
+const fontChanger = document.getElementById('font-changer'); 
 
 
 // add event listener for name inputs
@@ -25,5 +26,18 @@ buttonSubmit.addEventListener('click', ()=> {
   pronounHolder.textContent = newPronoun;
   colorChangeHead.style.backgroundColor = tagColor.value;
   colorChangeFoot.style.backgroundColor = tagColor.value;
+  if (fontChanger.value === 'all-caps') {
+    nameHolder.classList.add("uppercase"), 
+    pronounHolder.classList.add("uppercase");
+  } else if (fontChanger.value === 'green-font') {
+    nameHolder.classList.add("green-font"), 
+    pronounHolder.classList.add('green-font')
+  };
+
+  // if the font-changer that a user selects is "all-caps-font-chager"
+    
+    //elif the font-changer .... is "green"
+    // change the font to green
+    // else do nothing.
 });
 

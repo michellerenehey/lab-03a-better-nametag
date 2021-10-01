@@ -92,5 +92,10 @@ label {
     background-color: red; 
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
 
-
+.green-font {
+    color: green;
+}
